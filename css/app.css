@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'bixo';
+    src: url('../fonts/abaddon.ttf') format('truetype');
+    font-style: normal;
+}
+
+.bixo {
+    font-family: "bixo";
+}
+
+body {
+    background-image: url("../img/background.png");
+    background-color: #cccccc;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.modalFoto {
+    background-color: #0e0c0c7a;
+}
