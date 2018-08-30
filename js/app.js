@@ -1,16 +1,3 @@
-//Show a modal when the page loads
-$("#fotos").click(function() {
-    $('#myModal').modal('show');
-});
-
-$("#videos").click(function() {
-    $('#myModal1').modal('show');
-});
-
-if (window.innerWidth < 645) {
-    $('#fotos').removeClass('invisible');
-}
-
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
 
@@ -23,9 +10,24 @@ function myFunction() {
         btn.innerHTML = "Play";
     }
 }
+
 $(function() {
     $('#carouselExampleIndicators').carousel({
         interval: 2000000
     });
 
 });
+
+if (window.innerWidth < 400) {
+    $('#youtube').attr("width", "250");
+    $('#youtube').attr("height", "100");
+}
+
+if (window.innerWidth < 800) {
+    $('#youtube').attr("width", "380");
+    $('#youtube').attr("height", "280");
+}
+if (window.innerWidth > 960) {
+    $('#youtube').attr("width", "600");
+    $('#youtube').attr("height", "450");
+}
